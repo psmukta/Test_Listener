@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="failedTestRunning.TestTransformer"/>
+  </listeners>
+  <test thread-count="5" name="FailedTest(failed)">
+    <classes>
+      <class name="failedTestRunning.TestClass">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- failedTestRunning.TestClass -->
+      <class name="pac2.OurWebSite">
+        <methods>
+          <include name="SuperTech1"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- pac2.OurWebSite -->
+    </classes>
+  </test> <!-- FailedTest(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

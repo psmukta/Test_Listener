@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="A"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="failTestScreenShot.ScreenShotTest">
+        <methods>
+          <include name="SuperTech"/>
+          <include name="setUp"/>
+          <include name="Facebook"/>
+          <include name="teardown"/>
+          <include name="Google"/>
+        </methods>
+      </class> <!-- failTestScreenShot.ScreenShotTest -->
+      <class name="pac2.OurWebSite">
+        <methods>
+          <include name="SuperTech"/>
+        </methods>
+      </class> <!-- pac2.OurWebSite -->
+      <class name="pack1.ScreenTest">
+        <methods>
+          <include name="Facebook"/>
+        </methods>
+      </class> <!-- pack1.ScreenTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

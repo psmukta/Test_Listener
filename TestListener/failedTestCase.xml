@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+<listeners>
+<listener class-name="failedTestRunning.TestTransformer"/>
+</listeners>
+  <test name="FailedTest">
+    <classes>
+      <class name="failedTestRunning.TestClass"/>
+      <class name="pac2.OurWebSite"/>
+      
+    </classes>
+  </test> <!-- FailedTest -->
+</suite> <!-- Smoke -->
